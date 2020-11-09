@@ -1,0 +1,18 @@
+C:\Users\HL2020\Desktop\QuanLyNhaHang\DAL_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\QuanLyNhaHang\DAL_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.pdb
+C:\Users\HL2020\Desktop\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.csprojAssemblyReference.cache
+C:\Users\HL2020\Desktop\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\HL2020\Desktop\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.pdb
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.dll
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.pdb
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.csprojAssemblyReference.cache
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.csproj.CoreCompileInputs.cache
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.dll
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.pdb
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.pdb
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.csprojAssemblyReference.cache
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\DAL_QuanLyNhaHang\obj\Debug\DAL_QuanLyNhaHang.pdb

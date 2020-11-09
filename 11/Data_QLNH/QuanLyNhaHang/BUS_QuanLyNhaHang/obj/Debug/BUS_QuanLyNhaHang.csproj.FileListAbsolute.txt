@@ -1,0 +1,27 @@
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.pdb
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.pdb
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csprojAssemblyReference.cache
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CopyComplete
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.pdb
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.dll
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.pdb
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.dll
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.pdb
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csprojAssemblyReference.cache
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CoreCompileInputs.cache
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CopyComplete
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.dll
+D:\QLNH_c# (1)\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.pdb
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.pdb
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.pdb
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csprojAssemblyReference.cache
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CopyComplete
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.dll
+C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.pdb
