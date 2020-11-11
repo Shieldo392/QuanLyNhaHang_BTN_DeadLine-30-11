@@ -29,12 +29,19 @@ namespace GUI_QuanLyNhaHang
             {
                 if (bus.check_nv(user, pass) == true)
                 {
-                    QuanLyHoaDon frm = new QuanLyHoaDon();
+                    
+                    QuanLyHoaDon frm = new QuanLyHoaDon(user);
                     frm.Show();
+                    
                 }
                 else
                     MessageBox.Show("Kiểm tra tài khoản mật khẩu!");
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

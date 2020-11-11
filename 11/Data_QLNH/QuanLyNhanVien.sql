@@ -18,7 +18,7 @@ create table NhaCungCap(maNCC int Identity(1,1) primary key,
 create table SanPham(maSP int Identity(1,1) primary key,
 					 tenSP nvarchar(30) not null,
 					 soLuong int,
-					 donGia money,
+					 donGia int,
 					 maNCC int,
 					 constraint FK_SP_NCC foreign key (maNCC) references NhaCungCap(maNCC))
 
@@ -37,7 +37,7 @@ create table HoaDon(maHD nchar(10) primary key not null,
 create table ChiTietHD(maHD nchar(10) not null,
 						maSP int,
 						soLuong int,
-						donGiaBan money,
+						donGiaBan int,
 						maNV nchar(30) not null,
 						constraint PK_HD_SP primary key (maHD, maSP),
 						constraint Fk_HD foreign key (maHD) references HoaDon(maHD),
@@ -49,7 +49,7 @@ create table HDNhap(maHDN nchar(30) not null primary key,
 create table chiTietNhap(maHDN nchar(30) not null,
 						 maSP int,
 						 soLuongNhap int,
-						 donGia money,
+						 donGia int,
 						 maNCC int,
 						 constraint PK primary key(maHDN, maSP),
 						 constraint Fk_HD1 foreign key (maHDN) references HDNhap(maHDN),
@@ -84,6 +84,7 @@ insert into HoaDon values('hd3', '2/8/2020', 4)
 insert into HoaDon values('hd4', '3/9/2020', 2)
 insert into HoaDon values('hd5', '4/10/2020', 1)
 
+
 select * from NhaCungCap
 go
 -- dữ liệu nhà cung cấp
@@ -95,22 +96,41 @@ insert into NhaCungCap values(N'Hoang Long', N'Hà Nội', '09564131')
 insert into NhaCungCap values(N'Vinmart', N'Ba ĐÌnh', '09564131')
 go
 -- dữ liệu sản phẩm
+
 select * from SanPham
-insert into SanPham values(N'Thịt bò', 300, 120, 1)
-insert into SanPham values(N'Nấm', 300, 20, 2)
-insert into SanPham values(N'Tim Lợn', 300, 120, 3)
-insert into SanPham values(N'Cua ', 300, 150, 4)
-insert into SanPham values(N'Tôm hùm', 300, 1000, 5)
-insert into SanPham values(N'Rau', 300, 40, 6)
+insert into SanPham values(N'Lẩu cua', 550, 550, 1)
+insert into SanPham values(N'Khăn ướt', 10, 10, 2)
+insert into SanPham values(N'Thịt bò', 140, 140, 3)
+insert into SanPham values(N'Tràng lợn ', 150, 150, 4)
+insert into SanPham values(N'Tôm', 140, 140, 5)
+insert into SanPham values(N'Sụn', 140, 140, 6)
+insert into SanPham values(N'Kê gà', 200, 200, 6)
+insert into SanPham values(N'Nước lẩu', 50, 50, 6)
+insert into SanPham values(N'Rau', 40, 40, 6)
+insert into SanPham values(N'Nấm Kim', 20, 20, 6)
+insert into SanPham values(N'Xôi chiên', 40, 40, 6)
+insert into SanPham values(N'Khoai lang kén', 30, 30, 6)
+insert into SanPham values(N'Ngô chiên', 30, 30, 6)
+insert into SanPham values(N'Dưa chuột', 10, 10, 6)
+insert into SanPham values(N'Rượu voska', 70, 70, 6)
+insert into SanPham values(N'Rượu táo', 40, 40, 6)
+insert into SanPham values(N'Rượu nếp', 40, 40, 6)
+insert into SanPham values(N'Lavi', 10, 10, 6)
+insert into SanPham values(N'Trà Đá', 10, 10, 6)
+insert into SanPham values(N'Nước ngọt', 10, 10, 6)
+insert into SanPham values(N'Bia Sài gòn', 13, 13, 6)
+insert into SanPham values(N'Thuốc lá 3 số', 50, 50, 6)
+insert into SanPham values(N'Thuốc lá Thăng long', 15, 15, 6)
+
 go
 --dữ liệu chi tiết hóa đơn
 select * from ChiTietHD
-insert into ChiTietHD values('hd1', 1, 2, 135, 'A nguyen')
-insert into ChiTietHD values('hd1', 2, 1, 35, 'A nguyen')
-insert into ChiTietHD values('hd1', 3, 3, 135, 'C nguyen')
-insert into ChiTietHD values('hd1', 4, 1, 135, 'B nguyen')
-insert into ChiTietHD values('hd2', 2, 1, 235, 'D nguyen')
-insert into ChiTietHD values('hd2', 3, 4, 435, 'A nguyen')
+insert into ChiTietHD values('hd1', 7, 2, 135, 'A nguyen')
+insert into ChiTietHD values('hd1', 8, 1, 35, 'A nguyen')
+insert into ChiTietHD values('hd1', 10, 3, 135, 'C nguyen')
+insert into ChiTietHD values('hd1', 13, 1, 135, 'B nguyen')
+insert into ChiTietHD values('hd2', 7, 1, 235, 'D nguyen')
+insert into ChiTietHD values('hd2', 8, 4, 435, 'A nguyen')
 
 
 
@@ -140,3 +160,16 @@ insert into chiTietNhap values('hdn6', 3, 100, 120, 2)
 --
 Select HoaDon.maHD , tenKH, KhachHang.diaChi, KhachHang.sdt, HoaDon.ngayNhap
 from HoaDon inner join KhachHang on HoaDon.maKH = KhachHang.maKH
+
+--
+select ChiTietHD.maSP, tenSP, ChiTietHD.soLuong, donGia, (ChiTietHD.soLuong*donGia) as 'tongTien'
+from ChiTietHD inner join SanPham on ChiTietHD.maSP = SanPham.maSP
+where maHD = 'hd1'
+
+update SanPham set donGia = 10 where tenSP = N'Khăn ướt'
+--
+--test---
+Select SanPham.maSP, tenSP, ChiTietHD.soLuong, ChiTietHD.donGiaBan from SanPham inner join ChiTietHD on SanPham.maSP = ChiTietHD.maSP where maHD = 'hd1'
+-- test
+Update ChiTietHD set soLuong = 2, maNV = 'A Nguyen' where maHD = 'hd1' and maSP = 2
+select * from ChiTietHD where  maHD = 'hd1' and maSP = 2

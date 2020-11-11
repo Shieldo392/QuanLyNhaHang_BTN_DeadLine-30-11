@@ -93,5 +93,13 @@ namespace BUS_QuanLyNhaHang
             String sql = string.Format("Insert into HoaDon values('{0}',  '{1}', {2})", mahd, ngayNhap, maKH);
             dal.ExecuteNonQuery(sql);
         }
+        public DataTable get_Bang(String sql)
+        {
+            return dal.getTable(sql);
+        }
+        public void ExecuteNonQuery(string sql)
+        {
+            dal.ExecuteNonQuery(sql);
+        }
     }
 }

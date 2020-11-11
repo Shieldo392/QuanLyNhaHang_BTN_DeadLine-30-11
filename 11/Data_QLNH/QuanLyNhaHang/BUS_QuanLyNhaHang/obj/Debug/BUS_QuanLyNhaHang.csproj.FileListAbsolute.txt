@@ -25,3 +25,12 @@ C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_Quan
 C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CopyComplete
 C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.dll
 C:\Users\HL2020\Desktop\Data_QLNH_deadline30\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.pdb
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.dll
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.pdb
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.dll
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.pdb
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csprojAssemblyReference.cache
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CoreCompileInputs.cache
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CopyComplete
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.dll
+D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.pdb

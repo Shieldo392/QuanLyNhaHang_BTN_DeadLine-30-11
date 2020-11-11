@@ -66,6 +66,7 @@
     <Compile Include="QuanLyHoaDon.Designer.cs">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="SanPham.cs" />
     <EmbeddedResource Include="ChiTietHoaDon.resx">
       <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QuanLyHoaDon.resx">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
@@ -102,6 +104,57 @@
       <Project>{f2d1487e-a43a-4db0-b7bf-edcba2aff497}</Project>
       <Name>BUS_QuanLyNhaHang</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lẩu cua.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khăn ướt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thịt bò.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tràng lợn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tôm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sụn lợn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kê gà.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rau.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nấm kim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xôi chiên.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khoai lang kén.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngô chiên.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dưa chuột.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voska.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rượu táo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rượu nếp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavi.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

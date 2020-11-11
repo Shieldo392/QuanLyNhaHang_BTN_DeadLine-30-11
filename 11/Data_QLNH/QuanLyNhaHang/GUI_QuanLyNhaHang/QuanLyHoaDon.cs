@@ -14,6 +14,13 @@ namespace GUI_QuanLyNhaHang
     public partial class QuanLyHoaDon : Form
     {
         Bus_QLNH bus = new Bus_QLNH();
+        string _maNV;
+
+        public QuanLyHoaDon(string maNV)
+        {
+            this._maNV = maNV;
+            InitializeComponent();
+        }
         public QuanLyHoaDon()
         {
             InitializeComponent();
@@ -58,6 +65,19 @@ namespace GUI_QuanLyNhaHang
             String date = dtpNgayNhap.Value.ToString();
             bus.insert_HoaDon(maHD, maKH, date);
             getDgvQLHD();
+        }
+
+        private void dgvQLHD_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int dong = e.RowIndex;
+            String maHD = dgvQLHD.Rows[dong].Cells[0].Value + "";
+            String tenKH = dgvQLHD.Rows[dong].Cells[1].Value + "";
+            String diaChi = dgvQLHD.Rows[dong].Cells[2].Value + "";
+            String sdt = dgvQLHD.Rows[dong].Cells[3].Value + "";
+            String ngayNhap = dgvQLHD.Rows[dong].Cells[4].Value + "";
+            ChiTietHoaDon frm = new ChiTietHoaDon(_maNV, maHD, tenKH, diaChi, sdt, ngayNhap);
+            frm.Show();
+           
         }
     }
 }
