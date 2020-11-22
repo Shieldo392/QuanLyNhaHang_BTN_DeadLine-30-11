@@ -10,7 +10,7 @@ namespace DAL_QuanLyNhaHang
 {
     public class Dal_QLNH
     {
-        private string strConn = @"Data Source=DESKTOP-HTIOQVL;Initial Catalog=QuanLyBanHang_ver2;Integrated Security=True";
+        private string strConn = @"Data Source=DESKTOP-SUKQLAU;Initial Catalog=QuanLyBanHang_ver2;Integrated Security=True";
 
         public SqlConnection getConnect()
         {

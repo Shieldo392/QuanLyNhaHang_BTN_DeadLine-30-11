@@ -42,6 +42,7 @@ namespace GUI_QuanLyNhaHang
         {
             getDgvQLHD();
             getCboTenKH();
+            
 
 
         }
@@ -60,6 +61,11 @@ namespace GUI_QuanLyNhaHang
 
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
+            if(txtmaHD.Text =="")
+            {
+                MessageBox.Show("Mã hóa đơn không được để trống!", "Thông báo");
+                return;
+            }    
             String maHD = txtmaHD.Text;
             int maKH = int.Parse(cboTenKH.SelectedValue.ToString());
             String date = dtpNgayNhap.Value.ToString();
@@ -75,9 +81,22 @@ namespace GUI_QuanLyNhaHang
             String diaChi = dgvQLHD.Rows[dong].Cells[2].Value + "";
             String sdt = dgvQLHD.Rows[dong].Cells[3].Value + "";
             String ngayNhap = dgvQLHD.Rows[dong].Cells[4].Value + "";
-            ChiTietHoaDon frm = new ChiTietHoaDon(_maNV, maHD, tenKH, diaChi, sdt, ngayNhap);
-            frm.Show();
+            ChiTietHoaDon frm1 = new ChiTietHoaDon(_maNV, maHD, tenKH, diaChi, sdt, ngayNhap);
+            frm1.Show();
+            //frm1.MdiParent = this;
            
+        }
+
+        private void thôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLiKhachHang frm = new QuanLiKhachHang();
+            frm.Show();
+        }
+
+        private void quảnLýSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLySanPham frm = new QuanLySanPham();
+            frm.Show();
         }
     }
 }

@@ -31,8 +31,11 @@ namespace GUI_QuanLyNhaHang
                 {
                     
                     QuanLyHoaDon frm = new QuanLyHoaDon(user);
-                    frm.Show();
                     
+                    //frm.MdiParent = this;
+
+                    
+                    frm.Show();
                 }
                 else
                     MessageBox.Show("Kiểm tra tài khoản mật khẩu!");
@@ -41,6 +44,7 @@ namespace GUI_QuanLyNhaHang
 
         private void Login_Load(object sender, EventArgs e)
         {
+            menuStrip1.Enabled = false;
 
         }
     }

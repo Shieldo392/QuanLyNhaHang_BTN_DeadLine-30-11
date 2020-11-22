@@ -60,11 +60,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLiKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiKhachHang.Designer.cs">
+      <DependentUpon>QuanLiKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuanLyHoaDon.Designer.cs">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLySnaPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLySnaPham.Designer.cs">
+      <DependentUpon>QuanLySnaPham.cs</DependentUpon>
     </Compile>
     <Compile Include="SanPham.cs" />
     <EmbeddedResource Include="ChiTietHoaDon.resx">
@@ -83,8 +95,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuanLiKhachHang.resx">
+      <DependentUpon>QuanLiKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyHoaDon.resx">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLySnaPham.resx">
+      <DependentUpon>QuanLySnaPham.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

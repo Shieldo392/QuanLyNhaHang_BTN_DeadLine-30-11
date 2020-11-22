@@ -279,7 +279,8 @@ namespace GUI_QuanLyNhaHang
 
         private void btnGui_Click(object sender, EventArgs e)
         {
-            
+            // khi nhân nút đặt món kiểm tra xem nếu món đó đã có trng hóa đơn thì update lại
+            // nếu không có thì Insert vào hóa đơn
             
             if(txtLauCua.Text != "0")
             {
@@ -361,6 +362,414 @@ namespace GUI_QuanLyNhaHang
                 txtThitBo.Text = "0";
 
             }
+            if (txtTrangLon.Text != "0")
+            {
+                SanPham sp = getSP("Tràng lợn");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtTrangLon.Text);
+                if (checkSP("Tràng lợn") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Tràng lợn");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtTrangLon.Text = "0";
+
+            }
+            if (txtTom.Text != "0")
+            {
+                SanPham sp = getSP("Tôm");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtTom.Text);
+                if (checkSP("Tôm") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Tôm");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtTom.Text = "0";
+
+            }
+            if (txtSunLon.Text != "0")
+            {
+                SanPham sp = getSP("Sụn");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtSunLon.Text);
+                if (checkSP("Sụn") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Sụn");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtSunLon.Text = "0";
+
+            }
+            if (txtKeGa.Text != "0")
+            {
+                SanPham sp = getSP("Kê gà");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtKeGa.Text);
+                if (checkSP("Kê gà") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Kê gà");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtKeGa.Text = "0";
+
+            }
+            if (txtKeGa.Text != "0")
+            {
+                SanPham sp = getSP("Nước lẩu");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtNuocLau.Text);
+                if (checkSP("Nước lẩu") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Nước lẩu");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtNuocLau.Text = "0";
+
+            }
+            if (txtRau.Text != "0")
+            {
+                SanPham sp = getSP("Rau");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtRau.Text);
+                if (checkSP("Rau") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Rau");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtRau.Text = "0";
+
+            }
+            if (txtNam.Text != "0")
+            {
+                SanPham sp = getSP("Nấm");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtNam.Text);
+                if (checkSP("Nấm") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Nấm");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtNam.Text = "0";
+
+            }
+            if (txtXoiChien.Text != "0")
+            {
+                SanPham sp = getSP("Xôi chiên");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtXoiChien.Text);
+                if (checkSP("Xôi chiên") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Xôi chiên");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtXoiChien.Text = "0";
+
+            }
+
+            if (txtKhoaiLang.Text != "0")
+            {
+                SanPham sp = getSP("Khoai lang kén");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtKhoaiLang.Text);
+                if (checkSP("Khoai lang kén") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Khoai lang kén");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtKhoaiLang.Text = "0";
+
+            }
+            if (txtNgoChien.Text != "0")
+            {
+                SanPham sp = getSP("Ngô chiên");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtNgoChien.Text);
+                if (checkSP("Ngô chiên") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Ngô chiên");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtNgoChien.Text = "0";
+
+            }
+            if (txtDuaChuot.Text != "0")
+            {
+                SanPham sp = getSP("Dưa chuột");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtDuaChuot.Text);
+                if (checkSP("Dưa chuột") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Dưa chuột");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtDuaChuot.Text = "0";
+
+            }
+
+            if (txtVoska.Text != "0")
+            {
+                SanPham sp = getSP("Rượu voska");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtVoska.Text);
+                if (checkSP("Rượu voska") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Rượu voska");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtVoska.Text = "0";
+
+            }
+
+            if (txtTaoMeo.Text != "0")
+            {
+                SanPham sp = getSP("Rượu táo");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtTaoMeo.Text);
+                if (checkSP("Rượu táo") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Rượu táo");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtTaoMeo.Text = "0";
+
+            }
+            if (txtNep.Text != "0")
+            {
+                SanPham sp = getSP("Rượu nếp");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtNep.Text);
+                if (checkSP("Rượu nếp") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Rượu nếp");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtNep.Text = "0";
+
+            }
+            if (txtLavie.Text != "0")
+            {
+                SanPham sp = getSP("Lavi");
+                int msp = sp.maSP;
+                int sl = int.Parse(txtLavie.Text);
+                if (checkSP("Lavi") == null)
+                {
+
+                    int dg = sp.donGia;
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                else
+                {
+                    SanPham sp1 = checkSP("Lavi");
+                    int sl1 = sp1.soLuong + sl;
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+
+                    bus.ExecuteNonQuery(sql);
+                }
+                getDGV();
+                get_list_order();
+                getTongTien();
+                txtLavie.Text = "0";
+
+            }
 
         }
 
@@ -376,6 +785,8 @@ namespace GUI_QuanLyNhaHang
             txtKeGa.Text = "0";
             txtNuocLau.Text = txtRau.Text = "0";
             txtNam.Text = txtXoiChien.Text = txtKhoaiLang.Text = "0";
+            txtNgoChien.Text = txtDuaChuot.Text = txtVoska.Text = "0";
+            txtTaoMeo.Text = txtNep.Text = txtLavie.Text = "0";
 
         }
 
@@ -393,6 +804,108 @@ namespace GUI_QuanLyNhaHang
             getListSP();
             getTongTien();
 
+        }
+
+        private void btnCong_NgoChien_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtNgoChien.Text);
+            i++;
+            txtNgoChien.Text = i + "";
+        }
+
+        private void btnTru_NgoChien_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtNgoChien.Text);
+            if (i > 0)
+            {
+                i--;
+                txtNgoChien.Text = i + "";
+            }
+        }
+
+        private void btnCong_DuaChuot_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtDuaChuot.Text);
+            i++;
+            txtDuaChuot.Text = i + "";
+        }
+
+        private void btnCong_Voska_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtVoska.Text);
+            i++;
+            txtVoska.Text = i + "";
+        }
+
+        private void btnCong_TaoMeo_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtTaoMeo.Text);
+            i++;
+            txtTaoMeo.Text = i + "";
+        }
+
+        private void btnCong_Nep_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtNep.Text);
+            i++;
+            txtNep.Text = i + "";
+        }
+
+        private void btnCong_Lavie_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtLavie.Text);
+            i++;
+            txtLavie.Text = i + "";
+        }
+
+        private void btnTru_DuaChuot_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtDuaChuot.Text);
+            if (i > 0)
+            {
+                i--;
+                txtDuaChuot.Text = i + "";
+            }
+        }
+
+        private void btnTru_Voska_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtVoska.Text);
+            if (i > 0)
+            {
+                i--;
+                txtVoska.Text = i + "";
+            }
+        }
+
+        private void btnTru_TaoMeo_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtTaoMeo.Text);
+            if (i > 0)
+            {
+                i--;
+                txtTaoMeo.Text = i + "";
+            }
+        }
+
+        private void btnTru_Nep_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtNep.Text);
+            if (i > 0)
+            {
+                i--;
+                txtNep.Text = i + "";
+            }
+        }
+
+        private void btnTru_Lavie_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtLavie.Text);
+            if (i > 0)
+            {
+                i--;
+                txtLavie.Text = i + "";
+            }
         }
 
         private void getTongTien()

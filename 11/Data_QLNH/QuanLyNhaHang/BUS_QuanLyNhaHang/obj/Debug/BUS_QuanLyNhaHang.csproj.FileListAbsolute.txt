@@ -34,3 +34,12 @@ D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Dat
 D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CopyComplete
 D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.dll
 D:\Bài tập nhóm\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.pdb
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.dll
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\BUS_QuanLyNhaHang.pdb
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.dll
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\bin\Debug\DAL_QuanLyNhaHang.pdb
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csprojAssemblyReference.cache
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CoreCompileInputs.cache
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.csproj.CopyComplete
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.dll
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\BUS_QuanLyNhaHang\obj\Debug\BUS_QuanLyNhaHang.pdb

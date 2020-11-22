@@ -173,3 +173,6 @@ Select SanPham.maSP, tenSP, ChiTietHD.soLuong, ChiTietHD.donGiaBan from SanPham 
 -- test
 Update ChiTietHD set soLuong = 2, maNV = 'A Nguyen' where maHD = 'hd1' and maSP = 2
 select * from ChiTietHD where  maHD = 'hd1' and maSP = 2
+--
+delete from HoaDon where maHD =''
+select * from HoaDon
