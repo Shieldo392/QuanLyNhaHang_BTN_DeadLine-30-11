@@ -38,17 +38,18 @@ namespace GUI_QuanLyNhaHang
             this.txtTenNCC = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.dgvNCC = new System.Windows.Forms.DataGridView();
             this.maNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -125,61 +126,66 @@ namespace GUI_QuanLyNhaHang
             this.txtSDT.Size = new System.Drawing.Size(142, 20);
             this.txtSDT.TabIndex = 8;
             // 
-            // button1
+            // btnThem
             // 
-            this.button1.Location = new System.Drawing.Point(43, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnThem.Location = new System.Drawing.Point(43, 196);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.TabIndex = 9;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // button2
+            // btnSua
             // 
-            this.button2.Location = new System.Drawing.Point(144, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSua.Location = new System.Drawing.Point(144, 196);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.TabIndex = 10;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // button3
+            // btnXoa
             // 
-            this.button3.Location = new System.Drawing.Point(246, 196);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(246, 196);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 11;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button4
+            // btnTimKiem
             // 
-            this.button4.Location = new System.Drawing.Point(633, 196);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Tìm kiếm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Location = new System.Drawing.Point(633, 196);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimKiem.TabIndex = 12;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // textBox1
+            // txtTimKiem
             // 
-            this.textBox1.Location = new System.Drawing.Point(510, 199);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
+            this.txtTimKiem.Location = new System.Drawing.Point(510, 199);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(100, 20);
+            this.txtTimKiem.TabIndex = 13;
             // 
-            // dataGridView1
+            // dgvNCC
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNCC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maNCC,
             this.tenNCC,
             this.diaChi,
             this.sdt});
-            this.dataGridView1.Location = new System.Drawing.Point(43, 263);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(709, 195);
-            this.dataGridView1.TabIndex = 14;
+            this.dgvNCC.Location = new System.Drawing.Point(43, 263);
+            this.dgvNCC.Name = "dgvNCC";
+            this.dgvNCC.Size = new System.Drawing.Size(709, 195);
+            this.dgvNCC.TabIndex = 14;
+            this.dgvNCC.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNCC_CellClick);
             // 
             // maNCC
             // 
@@ -205,21 +211,31 @@ namespace GUI_QuanLyNhaHang
             // sdt
             // 
             this.sdt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.sdt.DataPropertyName = "sdt";
+            this.sdt.DataPropertyName = "soDT";
             this.sdt.HeaderText = "Số điện thoại";
             this.sdt.Name = "sdt";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(507, 183);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Tên NCC";
             // 
             // QuanLyNhaCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 495);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dgvNCC);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.txtTenNCC);
@@ -231,7 +247,9 @@ namespace GUI_QuanLyNhaHang
             this.Controls.Add(this.label1);
             this.Name = "QuanLyNhaCC";
             this.Text = "QuanLyNhaCC";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.QuanLyNhaCC_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNCC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,15 +266,16 @@ namespace GUI_QuanLyNhaHang
         private System.Windows.Forms.TextBox txtTenNCC;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.DataGridView dgvNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn maNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -104,7 +104,7 @@ namespace GUI_QuanLyNhaHang
             String tenKh = txtTim.Text;
             try
             {
-                String sql = String.Format("Select * from KhachHang where tenKH = N'{0}'", tenKh);
+                String sql = String.Format("Select * from KhachHang where tenKH LIKE N'%{0}%'", tenKh);
                 dgvKhachHang.DataSource = bus.get_Bang(sql);
 
             }

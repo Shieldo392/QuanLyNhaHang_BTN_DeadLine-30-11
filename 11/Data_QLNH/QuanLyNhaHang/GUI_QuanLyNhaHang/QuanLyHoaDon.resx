@@ -300,42 +300,6 @@
   <metadata name="maHD.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="tenKH.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="diaChi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="sdt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ngayNhap.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dgvQLHD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 290</value>
-  </data>
-  <data name="dgvQLHD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>732, 178</value>
-  </data>
-  <data name="dgvQLHD.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;dgvQLHD.Name" xml:space="preserve">
-    <value>dgvQLHD</value>
-  </data>
-  <data name="&gt;&gt;dgvQLHD.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgvQLHD.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dgvQLHD.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="maHD.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="maHD.HeaderText" xml:space="preserve">
     <value>Mã HD</value>
   </data>
@@ -362,6 +326,27 @@
   </metadata>
   <data name="ngayNhap.HeaderText" xml:space="preserve">
     <value>Ngày Nhập</value>
+  </data>
+  <data name="dgvQLHD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 290</value>
+  </data>
+  <data name="dgvQLHD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>732, 178</value>
+  </data>
+  <data name="dgvQLHD.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;dgvQLHD.Name" xml:space="preserve">
+    <value>dgvQLHD</value>
+  </data>
+  <data name="&gt;&gt;dgvQLHD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvQLHD.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvQLHD.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="txtTenKHFind.Location" type="System.Drawing.Point, System.Drawing">
     <value>582, 91</value>

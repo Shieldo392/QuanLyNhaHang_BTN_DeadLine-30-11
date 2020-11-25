@@ -152,6 +152,7 @@
             resources.ApplyResources(this.btnTimKiem, "btnTimKiem");
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // QuanLyHoaDon
             // 

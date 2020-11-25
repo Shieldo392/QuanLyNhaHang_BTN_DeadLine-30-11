@@ -26,7 +26,7 @@ namespace GUI_QuanLyNhaHang
         
         public void getDGVSP()
         {
-            String sql = "Select maSP, tenSP, soLuong, donGia, tenNCC from SanPham inner join NhaCungCap on SanPham.maNCC = NhaCungCap.maNCC";
+            String sql = "Select maSP, tenSP, soLuong, donGia from SanPham ";
             dgvSanPham.DataSource = bus.get_Bang(sql);
         }
         public void getCBONCC()
@@ -34,9 +34,7 @@ namespace GUI_QuanLyNhaHang
             String sql = "Select maNCC, tenNCC from NhaCungCap";
             DataTable dt = new DataTable();
             dt = bus.get_Bang(sql);
-            cboNCC.DataSource = dt;
-            cboNCC.DisplayMember = "tenNCC";
-            cboNCC.ValueMember = "maNCC";
+           
         }
 
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -46,7 +44,7 @@ namespace GUI_QuanLyNhaHang
             txtTenSP.Text = dgvSanPham.Rows[dong].Cells[1].Value.ToString().Trim();
             txtSoLuong.Text = dgvSanPham.Rows[dong].Cells[2].Value.ToString().Trim();
             txtDonGia.Text = dgvSanPham.Rows[dong].Cells[3].Value.ToString().Trim();
-            cboNCC.Text = dgvSanPham.Rows[dong].Cells[4].Value.ToString().Trim();
+            
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -57,8 +55,8 @@ namespace GUI_QuanLyNhaHang
                 
                 int sl = int.Parse(txtSoLuong.Text.Trim());
                 int dg = int.Parse(txtDonGia.Text.Trim());
-                int mNCC = int.Parse(cboNCC.SelectedValue.ToString());
-                String sql = String.Format("Insert into SanPham values( N'{0}', {1}, {2}, {3})", tenSP, sl, dg, mNCC);
+                
+                String sql = String.Format("Insert into SanPham values( N'{0}', {1}, {2})", tenSP, sl, dg);
                 bus.ExecuteNonQuery(sql);
                 MessageBox.Show("Thêm thành công!");
                 getDGVSP();
@@ -79,8 +77,7 @@ namespace GUI_QuanLyNhaHang
                  int msp = int.Parse(txtMaSP.Text.Trim());
                  int sl = int.Parse(txtSoLuong.Text.Trim());
                 int dg = int.Parse(txtDonGia.Text.Trim());
-                int mNCC = int.Parse(cboNCC.SelectedValue.ToString().Trim());
-                String sql = String.Format("Update SanPham set tenSP = N'{0}', soLuong= {1}, donGia = {2}, maNCC = {3} where maSP = {4}", tenSP, sl, dg, mNCC, msp);
+                String sql = String.Format("Update SanPham set tenSP = N'{0}', soLuong= {1}, donGia = {2} where maSP = {4}", tenSP, sl, dg, msp);
                 bus.ExecuteNonQuery(sql);
                 MessageBox.Show("Update thành công!");
                 getDGVSP();

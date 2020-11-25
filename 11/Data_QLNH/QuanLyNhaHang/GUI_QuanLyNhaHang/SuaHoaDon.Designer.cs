@@ -262,6 +262,7 @@ namespace GUI_QuanLyNhaHang
             this.Controls.Add(this.label1);
             this.Name = "SuaHoaDon";
             this.Text = "SuaHoaDon";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.SuaHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQLHD)).EndInit();
             this.ResumeLayout(false);

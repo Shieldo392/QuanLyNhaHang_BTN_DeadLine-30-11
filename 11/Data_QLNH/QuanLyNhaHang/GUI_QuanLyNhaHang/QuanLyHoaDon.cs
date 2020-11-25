@@ -98,5 +98,14 @@ namespace GUI_QuanLyNhaHang
             QuanLySanPham frm = new QuanLySanPham();
             frm.Show();
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            String tenKH1 = txtTenKHFind.Text.Trim();
+            String sql = String.Format("Select HoaDon.maHD, tenKH, diaChi, sdt, ngayNhap from " +
+                "HoaDon inner join KhachHang on HoaDon.maKH = KhachHang.maKH " +
+                "where tenKH LIKE N'%{0}%'", tenKH1);
+            dgvQLHD.DataSource = bus.get_Bang(sql);
+        }
     }
 }

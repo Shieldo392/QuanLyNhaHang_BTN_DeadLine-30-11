@@ -34,25 +34,22 @@ namespace GUI_QuanLyNhaHang
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtMaSP = new System.Windows.Forms.TextBox();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
-            this.cboNCC = new System.Windows.Forms.ComboBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.dgvSanPham = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnTim = new System.Windows.Forms.Button();
             this.maSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,16 +104,6 @@ namespace GUI_QuanLyNhaHang
             this.label5.TabIndex = 4;
             this.label5.Text = "Đơn giá";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(53, 205);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 19);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Nhà cung cấp";
-            // 
             // txtMaSP
             // 
             this.txtMaSP.Location = new System.Drawing.Point(176, 98);
@@ -148,15 +135,6 @@ namespace GUI_QuanLyNhaHang
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(200, 26);
             this.txtDonGia.TabIndex = 9;
-            // 
-            // cboNCC
-            // 
-            this.cboNCC.FormattingEnabled = true;
-            this.cboNCC.Location = new System.Drawing.Point(176, 205);
-            this.cboNCC.Margin = new System.Windows.Forms.Padding(4);
-            this.cboNCC.Name = "cboNCC";
-            this.cboNCC.Size = new System.Drawing.Size(180, 27);
-            this.cboNCC.TabIndex = 10;
             // 
             // btnThem
             // 
@@ -207,13 +185,40 @@ namespace GUI_QuanLyNhaHang
             this.maSP,
             this.tenSP,
             this.soLuong,
-            this.donGia,
-            this.tenNCC});
+            this.donGia});
             this.dgvSanPham.Location = new System.Drawing.Point(51, 307);
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.Size = new System.Drawing.Size(768, 242);
             this.dgvSanPham.TabIndex = 15;
             this.dgvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(568, 261);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(162, 26);
+            this.textBox1.TabIndex = 44;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(497, 264);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 19);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Tên SP";
+            // 
+            // btnTim
+            // 
+            this.btnTim.AutoSize = true;
+            this.btnTim.Location = new System.Drawing.Point(737, 261);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(82, 31);
+            this.btnTim.TabIndex = 45;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = true;
             // 
             // maSP
             // 
@@ -244,41 +249,6 @@ namespace GUI_QuanLyNhaHang
             this.donGia.HeaderText = "Đơn giá";
             this.donGia.Name = "donGia";
             // 
-            // tenNCC
-            // 
-            this.tenNCC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tenNCC.DataPropertyName = "tenNCC";
-            this.tenNCC.HeaderText = "Nhà Cung cấp";
-            this.tenNCC.Name = "tenNCC";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(568, 261);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 26);
-            this.textBox1.TabIndex = 44;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(497, 264);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 19);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "Tên SP";
-            // 
-            // btnTim
-            // 
-            this.btnTim.AutoSize = true;
-            this.btnTim.Location = new System.Drawing.Point(737, 261);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(82, 31);
-            this.btnTim.TabIndex = 45;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = true;
-            // 
             // QuanLySanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -292,12 +262,10 @@ namespace GUI_QuanLyNhaHang
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.cboNCC);
             this.Controls.Add(this.txtDonGia);
             this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.txtTenSP);
             this.Controls.Add(this.txtMaSP);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -307,6 +275,7 @@ namespace GUI_QuanLyNhaHang
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QuanLySanPham";
             this.Text = " Thông tin sản phẩm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QuanLySanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).EndInit();
             this.ResumeLayout(false);
@@ -321,24 +290,21 @@ namespace GUI_QuanLyNhaHang
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtMaSP;
         private System.Windows.Forms.TextBox txtTenSP;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.TextBox txtDonGia;
-        private System.Windows.Forms.ComboBox cboNCC;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.DataGridView dgvSanPham;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.DataGridViewTextBoxColumn maSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn donGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenNCC;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnTim;
     }
 }

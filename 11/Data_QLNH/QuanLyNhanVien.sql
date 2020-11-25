@@ -18,9 +18,7 @@ create table NhaCungCap(maNCC int Identity(1,1) primary key,
 create table SanPham(maSP int Identity(1,1) primary key,
 					 tenSP nvarchar(30) not null,
 					 soLuong int,
-					 donGia int,
-					 maNCC int,
-					 constraint FK_SP_NCC foreign key (maNCC) references NhaCungCap(maNCC))
+					 donGia int,)
 
 create table KhachHang(maKH int identity primary key,
 						tenKH nvarchar(30) not null,
@@ -98,29 +96,29 @@ go
 -- dữ liệu sản phẩm
 
 select * from SanPham
-insert into SanPham values(N'Lẩu cua', 550, 550, 1)
-insert into SanPham values(N'Khăn ướt', 10, 10, 2)
-insert into SanPham values(N'Thịt bò', 140, 140, 3)
-insert into SanPham values(N'Tràng lợn ', 150, 150, 4)
-insert into SanPham values(N'Tôm', 140, 140, 5)
-insert into SanPham values(N'Sụn', 140, 140, 6)
-insert into SanPham values(N'Kê gà', 200, 200, 6)
-insert into SanPham values(N'Nước lẩu', 50, 50, 6)
-insert into SanPham values(N'Rau', 40, 40, 6)
-insert into SanPham values(N'Nấm Kim', 20, 20, 6)
-insert into SanPham values(N'Xôi chiên', 40, 40, 6)
-insert into SanPham values(N'Khoai lang kén', 30, 30, 6)
-insert into SanPham values(N'Ngô chiên', 30, 30, 6)
-insert into SanPham values(N'Dưa chuột', 10, 10, 6)
-insert into SanPham values(N'Rượu voska', 70, 70, 6)
-insert into SanPham values(N'Rượu táo', 40, 40, 6)
-insert into SanPham values(N'Rượu nếp', 40, 40, 6)
-insert into SanPham values(N'Lavi', 10, 10, 6)
-insert into SanPham values(N'Trà Đá', 10, 10, 6)
-insert into SanPham values(N'Nước ngọt', 10, 10, 6)
-insert into SanPham values(N'Bia Sài gòn', 13, 13, 6)
-insert into SanPham values(N'Thuốc lá 3 số', 50, 50, 6)
-insert into SanPham values(N'Thuốc lá Thăng long', 15, 15, 6)
+insert into SanPham values(N'Lẩu cua', 550, 550)
+insert into SanPham values(N'Khăn ướt', 10, 10)
+insert into SanPham values(N'Thịt bò', 140, 140)
+insert into SanPham values(N'Tràng lợn ', 150, 150)
+insert into SanPham values(N'Tôm', 140, 140)
+insert into SanPham values(N'Sụn', 140, 140)
+insert into SanPham values(N'Kê gà', 200, 200)
+insert into SanPham values(N'Nước lẩu', 50, 50)
+insert into SanPham values(N'Rau', 40, 40)
+insert into SanPham values(N'Nấm Kim', 20, 20)
+insert into SanPham values(N'Xôi chiên', 40, 40)
+insert into SanPham values(N'Khoai lang kén', 30, 30)
+insert into SanPham values(N'Ngô chiên', 30, 30)
+insert into SanPham values(N'Dưa chuột', 10, 10)
+insert into SanPham values(N'Rượu voska', 70, 70)
+insert into SanPham values(N'Rượu táo', 40, 40)
+insert into SanPham values(N'Rượu nếp', 40, 40)
+insert into SanPham values(N'Lavi', 10, 10)
+insert into SanPham values(N'Trà Đá', 10, 10)
+insert into SanPham values(N'Nước ngọt', 10, 10)
+insert into SanPham values(N'Bia Sài gòn', 13, 13)
+insert into SanPham values(N'Thuốc lá 3 số', 50, 50)
+insert into SanPham values(N'Thuốc lá Thăng long', 15, 15)
 
 go
 --dữ liệu chi tiết hóa đơn
@@ -176,3 +174,10 @@ select * from ChiTietHD where  maHD = 'hd1' and maSP = 2
 --
 delete from HoaDon where maHD =''
 select * from HoaDon
+
+select HoaDon.maHD, tenKH, diaChi, sdt, ngayNhap from
+                HoaDon inner join KhachHang on HoaDon.maKH = KhachHang.maKH 
+               where tenKH LIKE N'%a%'
+			   
+
+select * from KhachHang

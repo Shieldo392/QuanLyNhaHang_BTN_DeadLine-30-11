@@ -82,5 +82,12 @@ namespace GUI_QuanLyNhaHang
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void thôngTinNhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyNhaCC frm = new QuanLyNhaCC();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
