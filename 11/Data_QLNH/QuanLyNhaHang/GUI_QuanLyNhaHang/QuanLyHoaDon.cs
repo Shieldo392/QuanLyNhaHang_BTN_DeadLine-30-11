@@ -83,7 +83,7 @@ namespace GUI_QuanLyNhaHang
             String ngayNhap = dgvQLHD.Rows[dong].Cells[4].Value + "";
             ChiTietHoaDon frm1 = new ChiTietHoaDon(_maNV, maHD, tenKH, diaChi, sdt, ngayNhap);
             frm1.Show();
-            //frm1.MdiParent = this;
+            
            
         }
 

@@ -130,7 +130,7 @@ namespace GUI_QuanLyNhaHang
             // btnThemMoi
             // 
             this.btnThemMoi.AutoSize = true;
-            this.btnThemMoi.Location = new System.Drawing.Point(562, 197);
+            this.btnThemMoi.Location = new System.Drawing.Point(462, 197);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(79, 29);
             this.btnThemMoi.TabIndex = 9;
@@ -141,7 +141,7 @@ namespace GUI_QuanLyNhaHang
             // btnSua
             // 
             this.btnSua.AutoSize = true;
-            this.btnSua.Location = new System.Drawing.Point(562, 250);
+            this.btnSua.Location = new System.Drawing.Point(462, 250);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(79, 29);
             this.btnSua.TabIndex = 10;
@@ -152,7 +152,7 @@ namespace GUI_QuanLyNhaHang
             // btnXoa
             // 
             this.btnXoa.AutoSize = true;
-            this.btnXoa.Location = new System.Drawing.Point(562, 300);
+            this.btnXoa.Location = new System.Drawing.Point(462, 300);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(79, 29);
             this.btnXoa.TabIndex = 11;
@@ -163,7 +163,7 @@ namespace GUI_QuanLyNhaHang
             // btnThoat
             // 
             this.btnThoat.AutoSize = true;
-            this.btnThoat.Location = new System.Drawing.Point(562, 356);
+            this.btnThoat.Location = new System.Drawing.Point(462, 356);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(79, 29);
             this.btnThoat.TabIndex = 12;
@@ -173,7 +173,7 @@ namespace GUI_QuanLyNhaHang
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(863, 146);
+            this.label6.Location = new System.Drawing.Point(783, 148);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 19);
             this.label6.TabIndex = 13;
@@ -181,7 +181,7 @@ namespace GUI_QuanLyNhaHang
             // 
             // txtTim
             // 
-            this.txtTim.Location = new System.Drawing.Point(947, 142);
+            this.txtTim.Location = new System.Drawing.Point(867, 144);
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(233, 26);
             this.txtTim.TabIndex = 14;
@@ -189,7 +189,7 @@ namespace GUI_QuanLyNhaHang
             // button5
             // 
             this.button5.AutoSize = true;
-            this.button5.Location = new System.Drawing.Point(1214, 139);
+            this.button5.Location = new System.Drawing.Point(1134, 141);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(79, 29);
             this.button5.TabIndex = 15;
@@ -205,7 +205,7 @@ namespace GUI_QuanLyNhaHang
             this.tenKH,
             this.diaChi,
             this.sdt});
-            this.dgvKhachHang.Location = new System.Drawing.Point(714, 195);
+            this.dgvKhachHang.Location = new System.Drawing.Point(583, 185);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.Size = new System.Drawing.Size(630, 390);
             this.dgvKhachHang.TabIndex = 16;
@@ -241,7 +241,7 @@ namespace GUI_QuanLyNhaHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1356, 612);
+            this.ClientSize = new System.Drawing.Size(1223, 547);
             this.Controls.Add(this.dgvKhachHang);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.txtTim);
@@ -260,9 +260,11 @@ namespace GUI_QuanLyNhaHang
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QuanLiKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLiKhachHang";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QuanLiKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.ResumeLayout(false);

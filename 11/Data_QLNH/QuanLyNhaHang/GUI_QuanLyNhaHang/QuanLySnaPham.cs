@@ -80,7 +80,7 @@ namespace GUI_QuanLyNhaHang
                  int sl = int.Parse(txtSoLuong.Text.Trim());
                 int dg = int.Parse(txtDonGia.Text.Trim());
                 int mNCC = int.Parse(cboNCC.SelectedValue.ToString().Trim());
-                String sql = String.Format("Update SanPham set tenSP = N'{0}', soLuong= {1}, donGia = {2}, maNCC = {3} where maSP = {4}", tenSP, sl, dg, mNCC, maSP);
+                String sql = String.Format("Update SanPham set tenSP = N'{0}', soLuong= {1}, donGia = {2}, maNCC = {3} where maSP = {4}", tenSP, sl, dg, mNCC, msp);
                 bus.ExecuteNonQuery(sql);
                 MessageBox.Show("Update thành công!");
                 getDGVSP();

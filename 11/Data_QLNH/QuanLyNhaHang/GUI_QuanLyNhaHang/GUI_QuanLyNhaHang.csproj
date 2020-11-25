@@ -72,6 +72,18 @@
     <Compile Include="QuanLyHoaDon.Designer.cs">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyNhaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhaCC.Designer.cs">
+      <DependentUpon>QuanLyNhaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhaHang.Designer.cs">
+      <DependentUpon>QuanLyNhaHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLySnaPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,18 @@
       <DependentUpon>QuanLySnaPham.cs</DependentUpon>
     </Compile>
     <Compile Include="SanPham.cs" />
+    <Compile Include="SuaHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaHoaDon.Designer.cs">
+      <DependentUpon>SuaHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XoaHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XoaHoaDon.Designer.cs">
+      <DependentUpon>XoaHoaDon.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChiTietHoaDon.resx">
       <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,8 +125,20 @@
     <EmbeddedResource Include="QuanLyHoaDon.resx">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyNhaCC.resx">
+      <DependentUpon>QuanLyNhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyNhaHang.resx">
+      <DependentUpon>QuanLyNhaHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLySnaPham.resx">
       <DependentUpon>QuanLySnaPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaHoaDon.resx">
+      <DependentUpon>SuaHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XoaHoaDon.resx">
+      <DependentUpon>XoaHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

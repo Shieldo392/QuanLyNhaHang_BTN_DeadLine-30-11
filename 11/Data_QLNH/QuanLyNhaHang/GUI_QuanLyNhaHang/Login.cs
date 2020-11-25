@@ -29,8 +29,9 @@ namespace GUI_QuanLyNhaHang
             {
                 if (bus.check_nv(user, pass) == true)
                 {
-                    
-                    QuanLyHoaDon frm = new QuanLyHoaDon(user);
+                    txtUser.Clear();
+                    txtPass.Clear();
+                    QuanLyNhaHang frm = new QuanLyNhaHang(user);
                     
                     //frm.MdiParent = this;
 
@@ -44,7 +45,7 @@ namespace GUI_QuanLyNhaHang
 
         private void Login_Load(object sender, EventArgs e)
         {
-            menuStrip1.Enabled = false;
+            
 
         }
     }

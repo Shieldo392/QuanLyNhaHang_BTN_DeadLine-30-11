@@ -81,3 +81,7 @@ D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaH
 D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.pdb
 D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.QuanLiKhachHang.resources
 D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.QuanLySanPham.resources
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.QuanLyNhaHang.resources
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.XoaHoaDon.resources
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.SuaHoaDon.resources
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.QuanLyNhaCC.resources
