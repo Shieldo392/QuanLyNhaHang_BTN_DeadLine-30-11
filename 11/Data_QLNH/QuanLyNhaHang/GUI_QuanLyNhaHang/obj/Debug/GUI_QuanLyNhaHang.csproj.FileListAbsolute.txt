@@ -87,3 +87,6 @@ D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaH
 D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.QuanLyNhaCC.resources
 D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.ThongKeNhapHang.resources
 D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.ChiTietHDN.resources
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.QuanLyNhanVien.resources
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.ThongTinNhanVien.resources
+D:\Data_QLNH_deadline30\QuanLyNhaHang_BTN_DeadLine-30-11\11\Data_QLNH\QuanLyNhaHang\GUI_QuanLyNhaHang\obj\Debug\GUI_QuanLyNhaHang.ThongTinQuanLy.resources

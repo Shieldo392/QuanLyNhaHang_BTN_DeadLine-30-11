@@ -108,5 +108,43 @@ namespace GUI_QuanLyNhaHang
             frm.Show();
             frm.MdiParent = this;
         }
+
+        private void thôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongTinNhanVien frm = new ThongTinNhanVien();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void quảnLýNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if(_code == 0)
+            {
+                MessageBox.Show("Bạn phải là Quản lý mới có thể sửa được hóa đơn!");
+                return;
+            }
+            QuanLyNhanVien frm = new QuanLyNhanVien();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void thôngTinNhânViênToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            ThongTinNhanVien frm = new ThongTinNhanVien();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void thôngTinQuảnLýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_code == 0)
+            {
+                MessageBox.Show("Bạn phải là Quản lý mới có thể sửa được hóa đơn!");
+                return;
+            }
+            ThongTinQuanLy frm = new ThongTinQuanLy();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
