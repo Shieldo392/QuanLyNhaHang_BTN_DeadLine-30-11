@@ -51,8 +51,9 @@ create table ChiTietHD(maHD nchar(10) not null,
 						constraint Fk_SP foreign key (maSP) references SanPham(maSP),
 						constraint Fk_nv foreign key(maNV) references NhanVien(maNV))
 create table HDNhap(maHDN nchar(30) not null primary key,
-				    maNCC int,
-					ngayNhap date)
+				    maNCC int not null,
+					ngayNhap date,
+					constraint FK_HDNhap foreign key (maNCC) references NhaCungCap(maNCC))
 create table chiTietNhap(maHDN nchar(30) not null,
 						 maSP int,
 						 soLuongNhap int,
@@ -168,39 +169,43 @@ insert into chiTietNhap values('hdn6', 3, 100, 120)
 
 
 --
-Select HoaDon.maHD , tenKH, KhachHang.diaChi, KhachHang.sdt, HoaDon.ngayNhap
-from HoaDon inner join KhachHang on HoaDon.maKH = KhachHang.maKH
+--Select HoaDon.maHD , tenKH, KhachHang.diaChi, KhachHang.sdt, HoaDon.ngayNhap
+--from HoaDon inner join KhachHang on HoaDon.maKH = KhachHang.maKH
 
---
-select ChiTietHD.maSP, tenSP, ChiTietHD.soLuong, donGia, (ChiTietHD.soLuong*donGia) as 'tongTien'
-from ChiTietHD inner join SanPham on ChiTietHD.maSP = SanPham.maSP
-where maHD = 'hd1'
+----
+--select ChiTietHD.maSP, tenSP, ChiTietHD.soLuong, donGia, (ChiTietHD.soLuong*donGia) as 'tongTien'
+--from ChiTietHD inner join SanPham on ChiTietHD.maSP = SanPham.maSP
+--where maHD = 'hd1'
 
-update SanPham set donGia = 10 where tenSP = N'Khăn ướt'
---
---test---
-Select SanPham.maSP, tenSP, ChiTietHD.soLuong, ChiTietHD.donGiaBan from SanPham inner join ChiTietHD on SanPham.maSP = ChiTietHD.maSP where maHD = 'hd1'
--- test
-Update ChiTietHD set soLuong = 2, maNV = 'A Nguyen' where maHD = 'hd1' and maSP = 2
-select * from ChiTietHD where  maHD = 'hd1' and maSP = 2
---
-delete from HoaDon where maHD =''
-select * from HoaDon
+--update SanPham set donGia = 10 where tenSP = N'Khăn ướt'
+----
+----test---
+--Select SanPham.maSP, tenSP, ChiTietHD.soLuong, ChiTietHD.donGiaBan from SanPham inner join ChiTietHD on SanPham.maSP = ChiTietHD.maSP where maHD = 'hd1'
+---- test
+--Update ChiTietHD set soLuong = 2, maNV = 'A Nguyen' where maHD = 'hd1' and maSP = 2
+--select * from ChiTietHD where  maHD = 'hd1' and maSP = 2
+----
+--delete from HoaDon where maHD =''
+--select * from HoaDon
 
-select HoaDon.maHD, tenKH, diaChi, sdt, ngayNhap from
-                HoaDon inner join KhachHang on HoaDon.maKH = KhachHang.maKH 
-               where tenKH LIKE N'%a%'
+--select HoaDon.maHD, tenKH, diaChi, sdt, ngayNhap from
+--                HoaDon inner join KhachHang on HoaDon.maKH = KhachHang.maKH 
+--               where tenKH LIKE N'%a%'
 			   
 
-select * from KhachHang
-select * from chiTietNhap
-select * from HDNhap inner join chiTietNhap on HDNhap.maHDN = chiTietNhap.maHDN
+--select * from KhachHang
+--select * from chiTietNhap
+--select * from HDNhap inner join chiTietNhap on HDNhap.maHDN = chiTietNhap.maHDN
 
-Select HDNhap.maHDN, tenNCC, ngayNhap, tenSP, soLuongNhap, chiTietNhap.donGia 
-                from HDNhap inner join chiTietNhap on HDNhap.maHDN = chiTietNhap.maHDN 
-                inner join SanPham  on SanPham.maSP = chiTietNhap.maSP 
-                inner join NhaCungCap on HDNhap.maNCC = NhaCungCap.maNCC
-				order by ngayNhap desc
+--Select HDNhap.maHDN, tenNCC, ngayNhap, tenSP, soLuongNhap, chiTietNhap.donGia 
+--                from HDNhap inner join chiTietNhap on HDNhap.maHDN = chiTietNhap.maHDN 
+--                inner join SanPham  on SanPham.maSP = chiTietNhap.maSP 
+--                inner join NhaCungCap on HDNhap.maNCC = NhaCungCap.maNCC
+--				order by ngayNhap desc
 
-Select tenSP, chiTietNhap.soLuongNhap, chiTietNhap.donGia from chiTietNhap inner join SanPham on chiTietNhap.maSP = SanPham.maSP where maHDN = 'hdn1'
-Update chiTietNhap set  soLuongNhap = 20, donGia = 100 where chiTietNhap = '{2}' and maSP = {3}
+--Select tenSP, chiTietNhap.soLuongNhap, chiTietNhap.donGia from chiTietNhap inner join SanPham on chiTietNhap.maSP = SanPham.maSP where maHDN = 'hdn1'
+
+
+
+--select * from NhanVien
+--Delete NhanVien where maNv = 'shieldo1'
