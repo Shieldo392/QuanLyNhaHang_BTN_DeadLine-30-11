@@ -96,7 +96,7 @@ namespace BUS_QuanLyNhaHang
         }
         public Boolean check_ql(string user, string pass)
         {
-            read_data_nv();
+            read_data_ql();
             foreach (NhanVien item in lst_QuanLy )
             {
                 if (item.maNV.Equals(user) && item.matKhau.Equals(pass))

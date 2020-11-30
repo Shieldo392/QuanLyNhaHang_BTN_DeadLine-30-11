@@ -65,8 +65,8 @@ create table chiTietNhap(maHDN nchar(30) not null,
 
 go
 -- dữ liệu quản lý
-insert into QuanLy values('Admin', 'admin', N'Nguyễn văn A',N'Nam', N'hà Tây', 2000, '0912723456')
-insert into QuanLy values('tranA', '1234', N'Nguyễn văn B', N'Nữ', N'hà Đông', 2001,'0912723456')
+insert into QuanLy values('Admin', 'admin', N'Nguyễn văn anh',N'Nam', N'hà Tây', 2000, '0912723456')
+insert into QuanLy values('tranA', '1234', N'Nguyễn văn Bình', N'Nữ', N'hà Đông', 2001,'0912723456')
 
 go
 --dữ liệu nhân viên

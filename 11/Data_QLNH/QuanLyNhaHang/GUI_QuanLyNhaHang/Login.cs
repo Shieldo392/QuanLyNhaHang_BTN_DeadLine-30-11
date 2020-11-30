@@ -49,11 +49,10 @@ namespace GUI_QuanLyNhaHang
                     txtPass.Clear();
                     QuanLyNhaHang frm = new QuanLyNhaHang(user, 1);
 
-                    //frm.MdiParent = this;
-
-
                     frm.Show();
                 }
+                else
+                    MessageBox.Show("Kiểm tra tài khoản mật khẩu!");
             }
         }
 
