@@ -31,7 +31,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     txtUser.Clear();
                     txtPass.Clear();
-                    QuanLyNhaHang frm = new QuanLyNhaHang(user);
+                    QuanLyNhaHang frm = new QuanLyNhaHang(user, 0);
                     
                     //frm.MdiParent = this;
 
@@ -40,6 +40,20 @@ namespace GUI_QuanLyNhaHang
                 }
                 else
                     MessageBox.Show("Kiểm tra tài khoản mật khẩu!");
+            }
+            else
+            {
+                if(bus.check_ql(user, pass))
+                {
+                    txtUser.Clear();
+                    txtPass.Clear();
+                    QuanLyNhaHang frm = new QuanLyNhaHang(user, 1);
+
+                    //frm.MdiParent = this;
+
+
+                    frm.Show();
+                }
             }
         }
 

@@ -50,7 +50,6 @@ namespace GUI_QuanLyNhaHang
             this.thôngTinKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnNhậpHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêHóaĐơnNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmMớiHóaĐơnNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinNhàCungCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -209,8 +208,7 @@ namespace GUI_QuanLyNhaHang
             // hóaĐơnNhậpHàngToolStripMenuItem
             // 
             this.hóaĐơnNhậpHàngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thốngKêHóaĐơnNhậpToolStripMenuItem,
-            this.thêmMớiHóaĐơnNhậpToolStripMenuItem});
+            this.thốngKêHóaĐơnNhậpToolStripMenuItem});
             this.hóaĐơnNhậpHàngToolStripMenuItem.Name = "hóaĐơnNhậpHàngToolStripMenuItem";
             this.hóaĐơnNhậpHàngToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.hóaĐơnNhậpHàngToolStripMenuItem.Text = "Hóa đơn nhập hàng";
@@ -218,14 +216,9 @@ namespace GUI_QuanLyNhaHang
             // thốngKêHóaĐơnNhậpToolStripMenuItem
             // 
             this.thốngKêHóaĐơnNhậpToolStripMenuItem.Name = "thốngKêHóaĐơnNhậpToolStripMenuItem";
-            this.thốngKêHóaĐơnNhậpToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.thốngKêHóaĐơnNhậpToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.thốngKêHóaĐơnNhậpToolStripMenuItem.Text = "Thống kê hóa đơn nhập";
-            // 
-            // thêmMớiHóaĐơnNhậpToolStripMenuItem
-            // 
-            this.thêmMớiHóaĐơnNhậpToolStripMenuItem.Name = "thêmMớiHóaĐơnNhậpToolStripMenuItem";
-            this.thêmMớiHóaĐơnNhậpToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.thêmMớiHóaĐơnNhậpToolStripMenuItem.Text = "Thêm mới hóa đơn nhập";
+            this.thốngKêHóaĐơnNhậpToolStripMenuItem.Click += new System.EventHandler(this.thốngKêHóaĐơnNhậpToolStripMenuItem_Click);
             // 
             // nhàCungCấpToolStripMenuItem
             // 
@@ -284,7 +277,6 @@ namespace GUI_QuanLyNhaHang
         private System.Windows.Forms.ToolStripMenuItem thôngTinKháchHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hóaĐơnNhậpHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thốngKêHóaĐơnNhậpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thêmMớiHóaĐơnNhậpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhàCungCấpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinNhàCungCấpToolStripMenuItem;
     }

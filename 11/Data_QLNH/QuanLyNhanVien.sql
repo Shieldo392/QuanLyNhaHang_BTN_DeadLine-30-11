@@ -4,6 +4,15 @@ create database QuanLyBanHang_ver2
 go
 use QuanLyBanHang_ver2
 go
+
+create table QuanLy(maQL nchar(10) not null primary key,
+					pass nchar(30) not null,
+					tenQL nvarchar(30) not null,
+					gioiTinh nchar(10), 
+					  diaChi nvarchar(30),
+					  namSinh int,
+					  soDt nchar(10) not null)
+
 create table NhanVien(maNv nchar(30) not null primary key,
 					  matKhau nchar(30) not null,
 					  tenNv nvarchar(30) not null,
@@ -48,13 +57,16 @@ create table chiTietNhap(maHDN nchar(30) not null,
 						 maSP int,
 						 soLuongNhap int,
 						 donGia int,
-						 maNCC int,
 						 constraint PK primary key(maHDN, maSP),
 						 constraint Fk_HD1 foreign key (maHDN) references HDNhap(maHDN),
-						constraint Fk_SP1 foreign key (maSP) references SanPham(maSP),
-						constraint FK_NCC foreign key(maNCC) references NhaCungCap(maNCC))
+						constraint Fk_SP1 foreign key (maSP) references SanPham(maSP))
 
 /* nghiên cứu thêm cách nhập hàng và ràng buộc khác!*/
+
+go
+-- dữ liệu quản lý
+insert into QuanLy values('Admin', 'admin', N'Nguyễn văn A',N'Nam', N'hà Tây', 2000, '0912723456')
+insert into QuanLy values('tranA', '1234', N'Nguyễn văn B', N'Nữ', N'hà Đông', 2001,'0912723456')
 
 go
 --dữ liệu nhân viên
@@ -146,13 +158,13 @@ insert into HDNhap values('hdn6', 4, '8/4/2020')
 go
 -- dữ liệu chi tiết hóa đơn nhập
 select * from chiTietNhap
-insert into chiTietNhap values('hdn1', 1, 500, 120, 1)
-insert into chiTietNhap values('hdn2', 2, 200, 150, 2)
-insert into chiTietNhap values('hdn3', 1, 200, 170, 1)
-insert into chiTietNhap values('hdn1', 2, 300, 220, 3)
-insert into chiTietNhap values('hdn4', 3, 500, 120, 4)
-insert into chiTietNhap values('hdn5', 4, 200, 120, 1)
-insert into chiTietNhap values('hdn6', 3, 100, 120, 2)
+insert into chiTietNhap values('hdn1', 1, 500, 120)
+insert into chiTietNhap values('hdn2', 2, 200, 150)
+insert into chiTietNhap values('hdn3', 1, 200, 170)
+insert into chiTietNhap values('hdn1', 2, 300, 220)
+insert into chiTietNhap values('hdn4', 3, 500, 120)
+insert into chiTietNhap values('hdn5', 4, 200, 120)
+insert into chiTietNhap values('hdn6', 3, 100, 120)
 
 
 --
@@ -181,3 +193,14 @@ select HoaDon.maHD, tenKH, diaChi, sdt, ngayNhap from
 			   
 
 select * from KhachHang
+select * from chiTietNhap
+select * from HDNhap inner join chiTietNhap on HDNhap.maHDN = chiTietNhap.maHDN
+
+Select HDNhap.maHDN, tenNCC, ngayNhap, tenSP, soLuongNhap, chiTietNhap.donGia 
+                from HDNhap inner join chiTietNhap on HDNhap.maHDN = chiTietNhap.maHDN 
+                inner join SanPham  on SanPham.maSP = chiTietNhap.maSP 
+                inner join NhaCungCap on HDNhap.maNCC = NhaCungCap.maNCC
+				order by ngayNhap desc
+
+Select tenSP, chiTietNhap.soLuongNhap, chiTietNhap.donGia from chiTietNhap inner join SanPham on chiTietNhap.maSP = SanPham.maSP where maHDN = 'hdn1'
+Update chiTietNhap set  soLuongNhap = 20, donGia = 100 where chiTietNhap = '{2}' and maSP = {3}

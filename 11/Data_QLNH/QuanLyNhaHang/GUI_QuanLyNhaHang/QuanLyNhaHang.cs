@@ -13,8 +13,10 @@ namespace GUI_QuanLyNhaHang
     public partial class QuanLyNhaHang : Form
     {
         String _user;
-        public QuanLyNhaHang(String user)
+        int _code;
+        public QuanLyNhaHang(String user, int code)
         {
+            this._code = code;
             this._user = user;
             InitializeComponent();
         }
@@ -26,27 +28,32 @@ namespace GUI_QuanLyNhaHang
 
         private void QuanLyNhaHang_Load(object sender, EventArgs e)
         {
-            QuanLyHoaDon frm = new QuanLyHoaDon(_user);
+            QuanLyHoaDon frm = new QuanLyHoaDon(_user, _code);
             frm.MdiParent = this;
             frm.Show();
         }
 
         private void thốngKêSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLySanPham frm = new QuanLySanPham();
+            QuanLySanPham frm = new QuanLySanPham(_code);
             frm.MdiParent = this;
             frm.Show();
         }
 
         private void quảnLýHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLyHoaDon frm = new QuanLyHoaDon(_user);
+            QuanLyHoaDon frm = new QuanLyHoaDon(_user, _code);
             frm.MdiParent = this;
             frm.Show();
         }
 
         private void xóaHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if(_code == 0)
+            {
+                MessageBox.Show("Bạn phải là Quản lý mới có thể xóa được hóa đơn!");
+                return;
+            }
             XoaHoaDon frm = new XoaHoaDon();
             frm.MdiParent = this;
             frm.Show();
@@ -71,6 +78,11 @@ namespace GUI_QuanLyNhaHang
 
         private void sửaHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (_code == 0)
+            {
+                MessageBox.Show("Bạn phải là Quản lý mới có thể sửa được hóa đơn!");
+                return;
+            }
             SuaHoaDon frm = new SuaHoaDon();
             frm.MdiParent = this;
             frm.Show();
@@ -78,7 +90,7 @@ namespace GUI_QuanLyNhaHang
 
         private void quảnLýSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLySanPham frm = new QuanLySanPham();
+            QuanLySanPham frm = new QuanLySanPham(_code);
             frm.MdiParent = this;
             frm.Show();
         }
@@ -88,6 +100,13 @@ namespace GUI_QuanLyNhaHang
             QuanLyNhaCC frm = new QuanLyNhaCC();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void thốngKêHóaĐơnNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKeNhapHang frm = new ThongKeNhapHang(_code);
+            frm.Show();
+            frm.MdiParent = this;
         }
     }
 }

@@ -15,9 +15,11 @@ namespace GUI_QuanLyNhaHang
     {
         Bus_QLNH bus = new Bus_QLNH();
         string _maNV;
+        int _code;
 
-        public QuanLyHoaDon(string maNV)
+        public QuanLyHoaDon(string maNV, int code)
         {
+            this._code = code;
             this._maNV = maNV;
             InitializeComponent();
         }
@@ -95,7 +97,7 @@ namespace GUI_QuanLyNhaHang
 
         private void quảnLýSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            QuanLySanPham frm = new QuanLySanPham();
+            QuanLySanPham frm = new QuanLySanPham(_code);
             frm.Show();
         }
 

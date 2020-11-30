@@ -10,6 +10,7 @@ namespace BUS_QuanLyNhaHang
 {
     public class Bus_QLNH
     {
+        List<NhanVien> lst_QuanLy = new List<NhanVien>();
         List<NhanVien> lst_nv = new List<NhanVien>();
         Dal_QLNH dal = new Dal_QLNH();
 
@@ -24,6 +25,23 @@ namespace BUS_QuanLyNhaHang
             DataTable dt = new DataTable();
             dt = dal.getTable(sql);
             return dt;
+        }
+        public void read_data_ql()
+        {
+            String sql = "Select * from QuanLy";
+
+            DataTable dt = dal.getTable(sql);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DataRow dr = dt.Rows[i];
+                string manv = dr[0].ToString().Trim();
+                string matKhau = dr[1].ToString().Trim();
+                string tenNv = dr[2].ToString().Trim();
+                string gioiTinh = dr[3].ToString().Trim();
+                string diaChi = dr[4].ToString().Trim();
+                int namSinh = Int32.Parse(dr[5].ToString().Trim());
+                lst_QuanLy.Add(new NhanVien(manv, matKhau, tenNv, gioiTinh, diaChi, namSinh));
+            }
         }
         public void read_data_nv()
         {
@@ -69,6 +87,17 @@ namespace BUS_QuanLyNhaHang
         {
             read_data_nv();
             foreach (NhanVien item in lst_nv)
+            {
+                if (item.maNV.Equals(user) && item.matKhau.Equals(pass))
+                    return true;
+            }
+
+            return false;
+        }
+        public Boolean check_ql(string user, string pass)
+        {
+            read_data_nv();
+            foreach (NhanVien item in lst_QuanLy )
             {
                 if (item.maNV.Equals(user) && item.matKhau.Equals(pass))
                     return true;

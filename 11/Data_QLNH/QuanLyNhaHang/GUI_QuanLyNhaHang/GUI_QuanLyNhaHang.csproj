@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietHDN.Designer.cs">
+      <DependentUpon>ChiTietHDN.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     <Compile Include="QuanLyNhaHang.Designer.cs">
       <DependentUpon>QuanLyNhaHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhanVien.Designer.cs">
+      <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLySnaPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,12 +109,21 @@
     <Compile Include="SuaHoaDon.Designer.cs">
       <DependentUpon>SuaHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongKeNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeNhapHang.Designer.cs">
+      <DependentUpon>ThongKeNhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="XoaHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="XoaHoaDon.Designer.cs">
       <DependentUpon>XoaHoaDon.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChiTietHDN.resx">
+      <DependentUpon>ChiTietHDN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChiTietHoaDon.resx">
       <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SuaHoaDon.resx">
       <DependentUpon>SuaHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeNhapHang.resx">
+      <DependentUpon>ThongKeNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XoaHoaDon.resx">
       <DependentUpon>XoaHoaDon.cs</DependentUpon>

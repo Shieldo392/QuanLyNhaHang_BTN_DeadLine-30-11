@@ -35,7 +35,7 @@ namespace GUI_QuanLyNhaHang
                 bus.ExecuteNonQuery(sql2);
                 MessageBox.Show("Xóa thành công!");
             }
-            catch(Exception e)
+            catch
             {
                 MessageBox.Show("Kiểm tra lại mã hóa đơn!");
             }

@@ -13,8 +13,10 @@ namespace GUI_QuanLyNhaHang
     public partial class QuanLySanPham : Form
     {
         Bus_QLNH bus = new Bus_QLNH();
-        public QuanLySanPham()
+        int _code;
+        public QuanLySanPham(int code)
         {
+            this._code = code;
             InitializeComponent();
         }
 
