@@ -328,6 +328,7 @@
             this.button21.TabIndex = 50;
             this.button21.Text = "In Hóa đơn";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // dgvBill
             // 

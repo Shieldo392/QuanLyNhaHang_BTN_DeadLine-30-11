@@ -1,4 +1,4 @@
-﻿use master
+﻿	use master
 go
 create database QuanLyBanHang_ver2
 go
@@ -209,3 +209,12 @@ insert into chiTietNhap values('hdn6', 3, 100, 120)
 
 --select * from NhanVien
 --Delete NhanVien where maNv = 'shieldo1'
+
+CREATE VIEW vw_ctHD
+as
+select maHD, ChiTietHD.maSP, tenSP, ChiTietHD.soLuong, donGia, (ChiTietHD.soLuong*donGia) as 'tongTien' 
+from ChiTietHD inner join SanPham on ChiTietHD.maSP = SanPham.maSP
+
+	select * from vw_ctHD
+
+	select maSP, tenSP, soLuong, donGia, tongTien from vw_ctHD where maHD = 'hd1'

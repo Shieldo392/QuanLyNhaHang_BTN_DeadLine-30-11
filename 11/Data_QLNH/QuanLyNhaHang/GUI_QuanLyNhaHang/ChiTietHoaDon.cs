@@ -16,16 +16,16 @@ namespace GUI_QuanLyNhaHang
         List<SanPham> lst_sanPham = new List<SanPham>();
         List<SanPham> lst_sanPham_order;
         Bus_QLNH bus = new Bus_QLNH();
-        String maNV, maHD, tenKH, diaChi, sdt, ngayNhap;
+        String _maNV, _maHD, _tenKH, _diaChi, _sdt, _ngayNhap;
 
-        public ChiTietHoaDon(string _maNV, string maHD, string tenKH, string diaChi, string sdt, string ngayNhap)
+        public ChiTietHoaDon(string maNV, string maHD, string tenKH, string diaChi, string sdt, string ngayNhap)
         {
-            this.maNV = _maNV;
-            this.maHD = maHD;
-            this.tenKH = tenKH;
-            this.diaChi = diaChi;
-            this.sdt = sdt;
-            this.ngayNhap = ngayNhap;
+            this._maNV = maNV;
+            this._maHD = maHD;
+            this._tenKH = tenKH;
+            this._diaChi = diaChi;
+            this._sdt = sdt;
+            this._ngayNhap = ngayNhap;
             InitializeComponent();
         }
 
@@ -291,7 +291,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD, msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD, msp, sl, dg, _maNV);
                    
                     bus.ExecuteNonQuery(sql);
                 }
@@ -299,7 +299,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Lẩu cua");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
                     
                     bus.ExecuteNonQuery(sql);
                 }
@@ -319,14 +319,14 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD, msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD, msp, sl, dg, _maNV);
                     bus.ExecuteNonQuery(sql);
                 }
                 else
                 {
                     SanPham sp1 = checkSP("Khăn ướt");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
                     bus.ExecuteNonQuery(sql);
                 }
                 getDGV();
@@ -344,7 +344,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -352,7 +352,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Thịt bò");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -371,7 +371,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -379,7 +379,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Tràng lợn");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -398,7 +398,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -406,7 +406,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Tôm");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -425,7 +425,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -433,7 +433,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Sụn");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -452,7 +452,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -460,7 +460,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Kê gà");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -479,7 +479,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -487,7 +487,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Nước lẩu");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -506,7 +506,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -514,7 +514,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Rau");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -533,7 +533,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -541,7 +541,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Nấm");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -560,7 +560,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -568,7 +568,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Xôi chiên");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -588,7 +588,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -596,7 +596,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Khoai lang kén");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -615,7 +615,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -623,7 +623,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Ngô chiên");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -642,7 +642,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -650,7 +650,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Dưa chuột");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -670,7 +670,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -678,7 +678,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Rượu voska");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -698,7 +698,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -706,7 +706,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Rượu táo");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -725,7 +725,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -733,7 +733,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Rượu nếp");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -752,7 +752,7 @@ namespace GUI_QuanLyNhaHang
                 {
 
                     int dg = sp.donGia;
-                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", maHD.Trim(), msp, sl, dg, maNV);
+                    string sql = string.Format("Insert into ChiTietHD values('{0}', {1}, {2}, {3}, '{4}' )", _maHD.Trim(), msp, sl, dg, _maNV);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -760,7 +760,7 @@ namespace GUI_QuanLyNhaHang
                 {
                     SanPham sp1 = checkSP("Lavi");
                     int sl1 = sp1.soLuong + sl;
-                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, maNV, maHD, msp);
+                    string sql = string.Format("Update ChiTietHD set soLuong = {0}, maNV = '{1}' where maHD = '{2}' and maSP = {3}", sl1, _maNV, _maHD, msp);
 
                     bus.ExecuteNonQuery(sql);
                 }
@@ -793,12 +793,12 @@ namespace GUI_QuanLyNhaHang
         private void ChiTietHoaDon_Load(object sender, EventArgs e)
         {
             clean();
-            txtMaHD.Text = maHD;
-            txtKhachHang.Text = tenKH;
-            txtDiaChi.Text = diaChi;
-            txtSDT.Text = sdt;
-            txtMaNV.Text = maNV;
-            dtpNgayNhap.Text = ngayNhap;
+            txtMaHD.Text = _maHD;
+            txtKhachHang.Text = _tenKH;
+            txtDiaChi.Text = _diaChi;
+            txtSDT.Text = _sdt;
+            txtMaNV.Text = _maNV;
+            dtpNgayNhap.Text = _ngayNhap;
             get_list_order();
             getDGV();
             getListSP();
@@ -908,6 +908,12 @@ namespace GUI_QuanLyNhaHang
             }
         }
 
+        private void button21_Click(object sender, EventArgs e)
+        {
+            frmInHoaDon frm = new frmInHoaDon(_maHD);
+            frm.Show();
+        }
+
         private void getTongTien()
         {
             float sum = 0;
@@ -920,7 +926,7 @@ namespace GUI_QuanLyNhaHang
 
         public DataTable tblChiTiet()
         {
-            String sql = string.Format("select ChiTietHD.maSP, tenSP, ChiTietHD.soLuong, donGia, (ChiTietHD.soLuong*donGia) as 'tongTien' from ChiTietHD inner join SanPham on ChiTietHD.maSP = SanPham.maSP where maHD = '{0}'", maHD);
+            String sql = string.Format("select ChiTietHD.maSP, tenSP, ChiTietHD.soLuong, donGia, (ChiTietHD.soLuong*donGia) as 'tongTien' from ChiTietHD inner join SanPham on ChiTietHD.maSP = SanPham.maSP where maHD = '{0}'", _maHD.Trim());
             DataTable dt = bus.get_Bang(sql);
             
             return dt;
